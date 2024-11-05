@@ -13,23 +13,24 @@ struct PlayerControls: View {
                 .padding()
             HStack {
                 PlayerButton(
-                    imageName: "backward", imageSize: 70,
+                    imageName: "backward", imageSize: 60,
                     imageColor: .cyan)
                 PlayerButton(
-                    imageName: "playpause", imageSize: 70,
+                    imageName: "playpause", imageSize: 60,
                     imageColor: .orange)
                 PlayerButton(
-                    imageName: "forward", imageSize: 70,
+                    imageName: "forward", imageSize: 60,
                     imageColor: .cyan)
             }
             .padding()
             .background {
                 RoundedRectangle(cornerRadius: 30)
                     .foregroundColor(Color.white.opacity(0.7))
-                    .frame(width: 350, height: 140)
+                    .frame(width: 350, height: 100)
                     .shadow(radius: 15)
             }
         }
+        .padding()
     }
 
 }
